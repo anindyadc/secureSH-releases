@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/anindyadc/secureSH-releases/main/assets/logo.png" alt="secureSH" width="80" height="80" />
+<img src="https://raw.githubusercontent.com/anindyadc/secureSH-releases/main/assets/logo.png" alt="secureSH" width="96" height="96" />
 
 # secureSH
 
