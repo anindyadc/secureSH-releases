@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "messages": [
+    {
+      "id": "tip-command-palette",
+      "type": "tip",
+      "text": "Press Ctrl+P to open the Command Palette — connect, run snippets, or jump to settings instantly.",
+      "link": null
+    },
+    {
+      "id": "tip-quick-switcher",
+      "type": "tip",
+      "text": "Ctrl+Shift+P opens the Quick Switcher — jump between open sessions by most recently used.",
+      "link": null
+    },
+    {
+      "id": "tip-paste-confirm",
+      "type": "tip",
+      "text": "Multi-line paste shows a preview before sending — protecting you from accidental prod commands.",
+      "link": null
+    },
+    {
+      "id": "tip-tab-color",
+      "type": "tip",
+      "text": "Assign a color to a session to get a color-coded tab and sidebar dot — great for prod vs staging.",
+      "link": null
+    },
+    {
+      "id": "tip-sftp-two-pane",
+      "type": "tip",
+      "text": "Click the Columns icon in the SFTP panel for two-pane mode — drag files between local and remote.",
+      "link": null
+    },
+    {
+      "id": "tip-session-notes",
+      "type": "tip",
+      "text": "Add notes to a session (rotation dates, topology tips) — hover the sticky-note icon in the sidebar.",
+      "link": null
+    },
+    {
+      "id": "tip-broadcast",
+      "type": "tip",
+      "text": "Use Broadcast mode to send the same command to multiple sessions simultaneously.",
+      "link": null
+    },
+    {
+      "id": "tip-macro-bar",
+      "type": "tip",
+      "text": "Pin macros to the button bar (max 8) for one-click execution without opening the macro panel.",
+      "link": null
+    },
+    {
+      "id": "tip-wol",
+      "type": "tip",
+      "text": "Set a MAC address on a session to get a Wake-on-LAN button — boot the machine before connecting.",
+      "link": null
+    },
+    {
+      "id": "tip-highlight",
+      "type": "tip",
+      "text": "Enable a Highlight Profile (Settings → Highlighting) to color-code log levels in real time.",
+      "link": null
+    },
+    {
+      "id": "tip-terminal-sharing",
+      "type": "tip",
+      "text": "Click the Share button in a terminal tab to let others watch your session read-only in a browser.",
+      "link": null
+    },
+    {
+      "id": "tip-regex-find",
+      "type": "tip",
+      "text": "In the Find bar (Ctrl+F) toggle the .* button to switch to regex search in the terminal output.",
+      "link": null
+    },
+    {
+      "id": "tip-keepalive",
+      "type": "tip",
+      "text": "Set a Session Keepalive interval in Settings to stop AWS and firewalls from dropping idle connections.",
+      "link": null
+    },
+    {
+      "id": "tip-audit-log",
+      "type": "tip",
+      "text": "Settings → Data → Audit Log shows a timestamped history of every connect, disconnect, and auth failure.",
+      "link": null
+    },
+    {
+      "id": "tip-ssh-cert",
+      "type": "tip",
+      "text": "secureSH supports SSH certificate authentication — set auth type to 'Certificate' and pick your cert file.",
+      "link": null
+    },
+    {
+      "id": "tip-x11",
+      "type": "tip",
+      "text": "Enable X11 Forwarding in session settings to run remote GUI apps locally via XQuartz.",
+      "link": null
+    },
+    {
+      "id": "tip-session-log",
+      "type": "tip",
+      "text": "Enable Session Logging (Settings → Terminal) to auto-save terminal output to a dated log file.",
+      "link": null
+    },
+    {
+      "id": "tip-templates",
+      "type": "tip",
+      "text": "Mark a session as a Template to use it as a base for new connections without modifying the original.",
+      "link": null
+    },
+    {
+      "id": "tip-cloud-sync",
+      "type": "tip",
+      "text": "Settings → Data → Cloud Sync lets you back up your encrypted vault to S3 or a self-hosted server.",
+      "link": null
+    },
+    {
+      "id": "tip-shortcuts",
+      "type": "tip",
+      "text": "Press F1 to see all keyboard shortcuts. Every shortcut is remappable in Settings → Keybindings.",
+      "link": null
+    }
+  ]
+}
