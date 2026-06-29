@@ -2,6 +2,36 @@
   "version": 1,
   "messages": [
     {
+      "id": "whats-new-v060",
+      "type": "whats-new",
+      "text": "v0.6.0 is here! TOTP/2FA generator, Telnet support, embedded Network Tools (ping, port scan, traceroute, DNS), and session import from PuTTY & MobaXterm.",
+      "link": "https://github.com/anindyadc/secureSH-releases/releases/tag/v0.6.0"
+    },
+    {
+      "id": "tip-totp",
+      "type": "tip",
+      "text": "New in v0.6.0: add TOTP entries in the 2FA panel and link them to keyboard-interactive sessions for one-click code copy at login.",
+      "link": null
+    },
+    {
+      "id": "tip-network-tools",
+      "type": "tip",
+      "text": "New in v0.6.0: the Network Tools panel (Globe icon) has ping, port scanner, traceroute, and DNS lookup — no separate terminal needed.",
+      "link": null
+    },
+    {
+      "id": "tip-telnet",
+      "type": "tip",
+      "text": "New in v0.6.0: connect to legacy devices over Telnet — select the protocol in the session form. A red 🔓 badge reminds you it's unencrypted.",
+      "link": null
+    },
+    {
+      "id": "tip-session-import",
+      "type": "tip",
+      "text": "New in v0.6.0: import sessions from PuTTY (.reg), MobaXterm (.mxtsessions), or ~/.ssh/config — all with a preview before committing.",
+      "link": null
+    },
+    {
       "id": "tip-command-palette",
       "type": "tip",
       "text": "Press Ctrl+P to open the Command Palette — connect, run snippets, or jump to settings instantly.",
