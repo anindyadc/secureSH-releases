@@ -1,154 +1,124 @@
 {
-  "version": 1,
+  "version": 2,
   "messages": [
     {
-      "id": "whats-new-v060",
+      "id": "feat-cloud-sync",
+      "type": "tip",
+      "text": "Cloud Sync replicates your entire environment — sessions, keys, TOTP, credential sets, and prefs — across every device. Settings → Data → Cloud Sync.",
+      "link": null
+    },
+    {
+      "id": "feat-tofu-hostkey",
+      "type": "security",
+      "text": "Every connection — terminal, SFTP, tunnels, jump hosts — verifies the server's host key on first use and hard-refuses a changed key. No silent MITM path.",
+      "link": null
+    },
+    {
+      "id": "feat-terminal-sharing",
+      "type": "tip",
+      "text": "Share a live terminal session read-only in a browser — great for pairing or support, no extra software needed on the viewer's end.",
+      "link": null
+    },
+    {
+      "id": "feat-macro-dsl",
+      "type": "tip",
+      "text": "Automate repetitive workflows with the Macro Scripting DSL — send, expect prompts, sleep, and emit progress, all without leaving the terminal.",
+      "link": null
+    },
+    {
+      "id": "feat-kubernetes",
+      "type": "tip",
+      "text": "Browse pods and exec into containers directly — pick a context, namespace, and pod, and secureSH bridges the shell for you. Requires kubectl.",
+      "link": null
+    },
+    {
+      "id": "feat-remote-monitor",
+      "type": "tip",
+      "text": "The Monitor panel shows live CPU, RAM, disk, and network graphs for any session — plus a process list where you can kill a runaway PID directly.",
+      "link": null
+    },
+    {
+      "id": "feat-tunnel-manager",
+      "type": "tip",
+      "text": "The Tunnel Manager tracks every Local/Remote/SOCKS5 tunnel across all sessions in one panel — start, pause, or stop without hunting for the right tab.",
+      "link": null
+    },
+    {
+      "id": "feat-workspaces",
+      "type": "tip",
+      "text": "Save your whole multi-pane layout — which sessions, which split, which ratios — as a Workspace, and restore it in one click next time.",
+      "link": null
+    },
+    {
+      "id": "feat-session-recording",
+      "type": "tip",
+      "text": "Record a terminal session and play it back later — useful for audits, incident review, or building a runbook from what you actually typed.",
+      "link": null
+    },
+    {
+      "id": "feat-totp-builtin",
+      "type": "tip",
+      "text": "Store TOTP secrets in secureSH and inject the code directly into a login prompt — one less app to unlock when you're already mid-connection.",
+      "link": null
+    },
+    {
+      "id": "feat-credential-sets",
+      "type": "tip",
+      "text": "Credential Sets inject env vars or secrets into a session without ever touching the clipboard — Ctrl+Shift+K from any terminal tab.",
+      "link": null
+    },
+    {
+      "id": "feat-secure-input",
+      "type": "security",
+      "text": "Secure Input Mode (Ctrl+Shift+H) types a password into the remote shell with local echo suppressed — nothing lands in scrollback or history.",
+      "link": null
+    },
+    {
+      "id": "feat-session-compare",
+      "type": "tip",
+      "text": "Run the same command across multiple sessions at once and diff the output side-by-side — spot config drift between servers in seconds.",
+      "link": null
+    },
+    {
+      "id": "feat-sftp-two-pane",
+      "type": "tip",
+      "text": "Two-pane SFTP puts local and remote side by side, with inline diff against a local file and auto-reupload when you save an edit.",
+      "link": null
+    },
+    {
+      "id": "feat-bastion-chains",
+      "type": "tip",
+      "text": "Chain through multiple bastion hosts to reach a server buried behind several jumps — each hop gets its own auth method and host-key check.",
+      "link": null
+    },
+    {
+      "id": "feat-rdp-vnc",
+      "type": "tip",
+      "text": "Launch RDP or VNC sessions straight from the sidebar alongside your SSH connections — one place for every way you reach a box.",
+      "link": null
+    },
+    {
+      "id": "feat-session-import",
+      "type": "tip",
+      "text": "Migrating from PuTTY or MobaXterm? Import your existing sessions directly — you'll get a preview before anything is written.",
+      "link": null
+    },
+    {
+      "id": "feat-mobile-companion",
       "type": "whats-new",
-      "text": "v0.6.0 is here! TOTP/2FA generator, Telnet support, embedded Network Tools (ping, port scan, traceroute, DNS), and session import from PuTTY & MobaXterm.",
-      "link": "https://github.com/anindyadc/secureSH-releases/releases/tag/v0.6.0"
-    },
-    {
-      "id": "tip-totp",
-      "type": "tip",
-      "text": "New in v0.6.0: add TOTP entries in the 2FA panel and link them to keyboard-interactive sessions for one-click code copy at login.",
+      "text": "secureSH now has a mobile companion app for iOS and Android — same vault, same sessions, biometric unlock built in.",
       "link": null
     },
     {
-      "id": "tip-network-tools",
+      "id": "feat-cli-companion",
       "type": "tip",
-      "text": "New in v0.6.0: the Network Tools panel (Globe icon) has ping, port scanner, traceroute, and DNS lookup — no separate terminal needed.",
+      "text": "The ssh-sh CLI companion connects to your saved sessions straight from a terminal — no GUI required, same vault under the hood.",
       "link": null
     },
     {
-      "id": "tip-telnet",
+      "id": "feat-network-tools",
       "type": "tip",
-      "text": "New in v0.6.0: connect to legacy devices over Telnet — select the protocol in the session form. A red 🔓 badge reminds you it's unencrypted.",
-      "link": null
-    },
-    {
-      "id": "tip-session-import",
-      "type": "tip",
-      "text": "New in v0.6.0: import sessions from PuTTY (.reg), MobaXterm (.mxtsessions), or ~/.ssh/config — all with a preview before committing.",
-      "link": null
-    },
-    {
-      "id": "tip-command-palette",
-      "type": "tip",
-      "text": "Press Ctrl+P to open the Command Palette — connect, run snippets, or jump to settings instantly.",
-      "link": null
-    },
-    {
-      "id": "tip-quick-switcher",
-      "type": "tip",
-      "text": "Ctrl+Shift+P opens the Quick Switcher — jump between open sessions by most recently used.",
-      "link": null
-    },
-    {
-      "id": "tip-paste-confirm",
-      "type": "tip",
-      "text": "Multi-line paste shows a preview before sending — protecting you from accidental prod commands.",
-      "link": null
-    },
-    {
-      "id": "tip-tab-color",
-      "type": "tip",
-      "text": "Assign a color to a session to get a color-coded tab and sidebar dot — great for prod vs staging.",
-      "link": null
-    },
-    {
-      "id": "tip-sftp-two-pane",
-      "type": "tip",
-      "text": "Click the Columns icon in the SFTP panel for two-pane mode — drag files between local and remote.",
-      "link": null
-    },
-    {
-      "id": "tip-session-notes",
-      "type": "tip",
-      "text": "Add notes to a session (rotation dates, topology tips) — hover the sticky-note icon in the sidebar.",
-      "link": null
-    },
-    {
-      "id": "tip-broadcast",
-      "type": "tip",
-      "text": "Use Broadcast mode to send the same command to multiple sessions simultaneously.",
-      "link": null
-    },
-    {
-      "id": "tip-macro-bar",
-      "type": "tip",
-      "text": "Pin macros to the button bar (max 8) for one-click execution without opening the macro panel.",
-      "link": null
-    },
-    {
-      "id": "tip-wol",
-      "type": "tip",
-      "text": "Set a MAC address on a session to get a Wake-on-LAN button — boot the machine before connecting.",
-      "link": null
-    },
-    {
-      "id": "tip-highlight",
-      "type": "tip",
-      "text": "Enable a Highlight Profile (Settings → Highlighting) to color-code log levels in real time.",
-      "link": null
-    },
-    {
-      "id": "tip-terminal-sharing",
-      "type": "tip",
-      "text": "Click the Share button in a terminal tab to let others watch your session read-only in a browser.",
-      "link": null
-    },
-    {
-      "id": "tip-regex-find",
-      "type": "tip",
-      "text": "In the Find bar (Ctrl+F) toggle the .* button to switch to regex search in the terminal output.",
-      "link": null
-    },
-    {
-      "id": "tip-keepalive",
-      "type": "tip",
-      "text": "Set a Session Keepalive interval in Settings to stop AWS and firewalls from dropping idle connections.",
-      "link": null
-    },
-    {
-      "id": "tip-audit-log",
-      "type": "tip",
-      "text": "Settings → Data → Audit Log shows a timestamped history of every connect, disconnect, and auth failure.",
-      "link": null
-    },
-    {
-      "id": "tip-ssh-cert",
-      "type": "tip",
-      "text": "secureSH supports SSH certificate authentication — set auth type to 'Certificate' and pick your cert file.",
-      "link": null
-    },
-    {
-      "id": "tip-x11",
-      "type": "tip",
-      "text": "Enable X11 Forwarding in session settings to run remote GUI apps locally via XQuartz.",
-      "link": null
-    },
-    {
-      "id": "tip-session-log",
-      "type": "tip",
-      "text": "Enable Session Logging (Settings → Terminal) to auto-save terminal output to a dated log file.",
-      "link": null
-    },
-    {
-      "id": "tip-templates",
-      "type": "tip",
-      "text": "Mark a session as a Template to use it as a base for new connections without modifying the original.",
-      "link": null
-    },
-    {
-      "id": "tip-cloud-sync",
-      "type": "tip",
-      "text": "Settings → Data → Cloud Sync lets you back up your encrypted vault to S3 or a self-hosted server.",
-      "link": null
-    },
-    {
-      "id": "tip-shortcuts",
-      "type": "tip",
-      "text": "Press F1 to see all keyboard shortcuts. Every shortcut is remappable in Settings → Keybindings.",
+      "text": "Built-in Network Tools cover IP lookup, whois, SSL certificate checks, and subnet calculations — no need to leave the app for basic diagnostics.",
       "link": null
     }
   ]
